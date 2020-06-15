@@ -1,7 +1,5 @@
-
-
 $(document).ready(function() {
-    
+
     var coseDaFare = [
         'Javascript',
         'php',
@@ -12,12 +10,17 @@ $(document).ready(function() {
 
         var cloneLi = $('.template li').clone();
 
-        cloneLi.text(coseDaFare[i]);
-        
+        cloneLi.prepend(coseDaFare[i]);
+
         $('.todo ul').append(cloneLi);
     }
 
 
+    $('.todo .da-cancellare').click(
+        function() {
+            $(this).parent().remove();
+        }
+
+    );
 
 });
-

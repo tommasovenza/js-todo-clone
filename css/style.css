@@ -18,3 +18,11 @@
 .margin-top {
     margin-top: 20px;
 }
+
+.da-cancellare {
+    margin-left: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 0px 3px;
+    border: 1px solid #fff;
+}
