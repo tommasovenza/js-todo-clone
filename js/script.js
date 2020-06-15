@@ -16,11 +16,27 @@ $(document).ready(function() {
     }
 
 
-    $('.todo .da-cancellare').click(
+    $(document).on('click', '.todo .da-cancellare', 
         function() {
             $(this).parent().remove();
         }
 
     );
+
+
+    $('#button').click(function() {
+
+        var valoreDiInput = $('#input').val();
+        
+        var cloneLi2 = $('.template li').clone();
+
+        cloneLi2.prepend(valoreDiInput);
+       
+        $('.todo ul').append(cloneLi2);
+
+        // svuoto al click il campo input
+        $('#input').val('');
+    });    
+
 
 });

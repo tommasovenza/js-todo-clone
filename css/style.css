@@ -19,6 +19,15 @@
     margin-top: 20px;
 }
 
+#input {
+    margin-top: 30px;
+    padding: 10px 7px;
+}
+
+#button {
+    padding: 10px 7px;
+}
+
 .da-cancellare {
     margin-left: 20px;
     font-size: 20px;
